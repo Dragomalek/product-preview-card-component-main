@@ -1,0 +1,145 @@
+:root {
+  /* ## Colors
+
+### Primary */
+
+  --Dark_cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --Very_dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish_blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cream);
+}
+
+main {
+  margin: 16vh 0;
+  height: 30rem;
+  width: 40rem;
+
+  background-color: var(--Cream);
+  display: flex;
+  align-items: center;
+  columns: row;
+}
+
+picture,
+section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Cream);
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+section {
+  gap: 1rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  background-color: var(--White);
+}
+
+header h2 {
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 2rem 1.5rem 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark_grayish_blue);
+}
+
+header h1 {
+  line-height: 2rem;
+  text-align: left;
+  font-weight: 700;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0 2rem 0 2rem;
+  color: var(--Dark_grayish_blue);
+}
+
+.price {
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 2rem;
+}
+
+.total {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: var(--Dark_cyan);
+  font-weight: 700;
+}
+
+.precio-anterior {
+  display: flex;
+  align-items: center;
+  color: var(--Dark_grayish_blue);
+  text-decoration: line-through;
+}
+
+form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  position: relative;
+  border-style: none;
+  background-color: var(--Dark_cyan);
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: 900;
+  height: 3rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+  transition-duration: 0.4s;
+}
+
+#car {
+  position: relative;
+  top: -2.2rem;
+  left: 5.5rem;
+  color: black;
+  height: 20px;
+  width: auto;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(158, 36%, 24%);
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+}
